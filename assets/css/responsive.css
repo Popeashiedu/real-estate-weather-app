@@ -23,12 +23,17 @@
         font-size: var(--fs-p);
     }
     #header{
-    
-        height: auto;
+        background: url(../images/bg-header.png);
         background-repeat: no-repeat;
+        height: auto;
         background-size: 32%;
+        color: var(--fc-primary);
+    background-color: var(--clr-bg-1);
         background-position: 100% 80%;
         
+    }
+    .mobile{
+        display: none;
     }
 }
 @media (min-width: 992px){
@@ -36,6 +41,7 @@
         background: url(../images/side-bg-1.png);
         background-repeat: no-repeat;
         background-position: 100% 90%;
+        z-index: 5;
     }
     #features{
         background: url(../images/side-bg-1.png), url(../images/side-bg-2.png);

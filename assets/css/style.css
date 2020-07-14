@@ -38,14 +38,9 @@
  
 /* HEADER SSTARTS  */
 #header{
-    
     color: var(--fc-primary);
-    background: url(../images/bg-header.png);
     background-color: var(--clr-bg-1);
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: 75% 95%;
-    height: 220vh;
+    
     
 }
 .clock{
@@ -66,7 +61,7 @@
 
 .clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
     font-family: var(--ff-secondary);
-    font-size: var(--fs-p-mob);
+    font-size: 10px;
 }
 
 .coming-soon h1{
