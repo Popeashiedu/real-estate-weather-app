@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --ff-primary:  'Ramaraja', serif;
+    --ff-secondary: 'Cormorant Upright', serif;
+    --ff-aux: 'Montserrat', sans-serif;
+    --clr-primary: #324119;
+    --fc-primary: #ffffff;
+    --fc-secondary: #313131;
+    --clr-bg-1:#313131;
+    --clr-bg-2: #e6e6e6;
+    --fs-h1: 64px;
+    --fs-h2: 40px;
+    --fs-h3: 36px;
+    --fs-p: 14px;
+    --fh-mob: 20px; 
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),  0.125em 0.125em 0.25em rgba(0,0,0,.15);
+  
+  }
+
+  p{
+      margin-bottom: 0;
+  }
+ 
+
+#header{
+    
+    color: var(--fc-primary);
+    background: url(../images/bg-header.png);
+    background-color: var(--clr-bg-1);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 75% 100%;
+    
+}
+.clock{
+    color: var(--fc-primary);
+}
+
+.clock-1, .clock-2, .clock-3, .clock-4{
+    border: 1px solid var(--fc-primary);
+    width: 3.25rem!important;
+}
+
+.day h2, .hours h2, .minutes h2, .seconds h2{
+    font-family: var(--ff-primary);
+    font-size: var(--fh-mob);
+}
+
+
+.clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-p);
+}
+
+
+#inputPassword2{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.subscribe-btn{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #FF6584;
+    border: #FF6584;
+}
+
+
+/* preloader start  */
+#overlay{
+    background-color: #3f5268;
+    height: 100vh;
+}
+
+#loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: filling 0.5s ease forwards 2s;
+}
+
+#loading path:nth-child(2){
+    stroke-dasharray: 503.75px;
+    stroke-dashoffset: 503.75px;
+    animation: line-anim 3s ease forwards;
+    
+}
+#loading path:nth-child(3){
+    stroke-dasharray: 462.886px;
+    stroke-dashoffset: 462.886px;
+    animation: line-anim 3s ease forwards 0.3s;
+}
+#loading path:nth-child(4){
+    stroke-dasharray: 293.117px;
+    stroke-dashoffset: 293.117px;
+    animation: line-anim 3s ease forwards 0.6s;
+}
+#loading path:nth-child(5){
+    stroke-dasharray: 528.41px;
+    stroke-dashoffset: 528.41px;
+    animation: line-anim 3s ease forwards 0.9s;
+}
+#loading path:nth-child(6){
+    stroke-dasharray: 640.048px;
+    stroke-dashoffset: 640.048px;
+    animation: line-anim 3s ease forwards 1.2s;
+}
+#loading path:nth-child(7){
+    stroke-dasharray: 405.66px;
+    stroke-dashoffset: 405.66px;
+    animation: line-anim 3s ease forwards 1.5s;
+}
+#loading path:nth-child(8){
+    stroke-dasharray: 405.194px;
+    stroke-dashoffset: 405.194px;
+    animation: line-anim 3s ease forwards 1.8s;
+}
+#loading path:nth-child(13){
+    stroke-dasharray: 5.194px;
+    /* stroke-dashoffset: 405.194px; */
+    /* animation: line-anim 3s ease forwards 1.8s; */
+}
+
+.dots{
+    background-color: #FF6584;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: all-dots 2s ease-in 2s;
+    
+}
+.dot-1{
+    animation: loader 2s linear 2.5s infinite ;
+}
+.dot-2{
+    margin-left: 2%;
+    animation: loader 2s ease-in-out 2.7s infinite;
+}
+.dot-3{
+    margin-left: 4%;
+    animation: loader 2s ease-in-out 3s infinite;
+}
+.dot-4{
+    margin-left: 6%;
+    animation: loader 2s ease-in-out 3.2s infinite;
+}
+.dot-5{
+    margin-left: 8%;
+    animation: loader 2s ease-in-out 3.4s infinite;
+}
+
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes filling{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #FF6584;
+    }
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0.5);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    75%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0.5);
+    }
+}
+
+@keyframes all-dots{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+/* preloader end  */

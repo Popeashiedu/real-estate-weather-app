@@ -1,0 +1,25 @@
+@media (min-width: 768px){
+    .clock-1, .clock-2, .clock-3, .clock-4{
+        border: 1px solid var(--fc-primary);
+        padding: 1rem;
+        width: 6.25rem!important;
+        width: 6.25rem;
+    }
+    #header{
+    
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: 32%;
+        background-position: 100% 65%;
+        
+    }
+}
+@media (min-width: 992px){
+
+}
+@media (min-width: 1200px){
+  
+}
+@media (min-width: 1440px){
+   
+}
