@@ -29,10 +29,10 @@ window.addEventListener('load', function () {
 
 
 // AOS.init({ offset: 300, duration: 800 }); AOS ANIMATION INITIALIZER
-// $(function () {
-//     AOS.init({ offset: 300, duration: 1000, easing: "ease-out-quad", once: 0 });
-//     window.addEventListener('load', AOS.refresh);
-// });
+$(function () {
+    AOS.init({ offset: 300, duration: 1000, easing: "ease-out-quad", once: 0 });
+    window.addEventListener('load', AOS.refresh);
+});
 
 // TIMER 
 function countdown() {

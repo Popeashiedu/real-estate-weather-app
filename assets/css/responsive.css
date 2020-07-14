@@ -5,6 +5,9 @@
         width: 6.25rem!important;
         width: 6.25rem;
     }
+    .clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
+        font-size: var(--fs-p);
+    }
     #header{
     
         height: auto;
@@ -15,6 +18,10 @@
     }
 }
 @media (min-width: 992px){
+    /* HEADER  */
+    .day h2, .hours h2, .minutes h2, .seconds h2{
+        font-size: var(--fs-h1);
+    }
 
 }
 @media (min-width: 1200px){
