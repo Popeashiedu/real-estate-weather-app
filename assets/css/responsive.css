@@ -1,3 +1,17 @@
+@media (max-width: 350px){
+    .subscribe-btn{
+        height: calc(1.5em + .75rem + 2px);
+        font-size: 16px;
+    }
+    #header{
+    
+        background-position: 75% 95%;
+        height: 240vh;
+        
+    }
+
+}
+
 @media (min-width: 768px){
     .clock-1, .clock-2, .clock-3, .clock-4{
         border: 1px solid var(--fc-primary);
@@ -13,11 +27,22 @@
         height: auto;
         background-repeat: no-repeat;
         background-size: 32%;
-        background-position: 100% 65%;
+        background-position: 100% 80%;
         
     }
 }
 @media (min-width: 992px){
+    body{
+        background: url(../images/side-bg-1.png);
+        background-repeat: no-repeat;
+        background-position: 100% 90%;
+    }
+    #features{
+        background: url(../images/side-bg-1.png), url(../images/side-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: 100% 20%, 0% 60%;
+    
+    }
     /* HEADER  */
     .day h2, .hours h2, .minutes h2, .seconds h2{
         font-size: var(--fs-h1);
