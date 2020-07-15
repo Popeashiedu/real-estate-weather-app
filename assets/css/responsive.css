@@ -3,25 +3,12 @@
         height: calc(1.5em + .75rem + 2px);
         font-size: 16px;
     }
-    #header{
     
-        background-position: 75% 95%;
-        height: 240vh;
-        
-    }
 
 }
 
 @media (min-width: 768px){
-    .clock-1, .clock-2, .clock-3, .clock-4{
-        border: 1px solid var(--fc-primary);
-        padding: 1rem;
-        width: 6.25rem!important;
-        width: 6.25rem;
-    }
-    .clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
-        font-size: var(--fs-p);
-    }
+    
     #header{
         background: url(../images/bg-header.png);
         background-repeat: no-repeat;
@@ -35,6 +22,13 @@
     .mobile{
         display: none;
     }
+    #tiny-slider{
+        
+        top: 50%;
+        left: 23.5%;
+        
+    }
+
 }
 @media (min-width: 992px){
     body{
@@ -42,6 +36,15 @@
         background-repeat: no-repeat;
         background-position: 100% 90%;
         z-index: 5;
+    }
+    .clock-1, .clock-2, .clock-3, .clock-4{
+        border: 1px solid var(--fc-primary);
+        padding: 1rem;
+        width: 6.25rem!important;
+        height: 6.25rem;
+    }
+    .clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
+        font-size: var(--fs-p);
     }
     #features{
         background: url(../images/side-bg-1.png), url(../images/side-bg-2.png);
@@ -54,6 +57,10 @@
         font-size: var(--fs-h1);
     }
 
+    #tiny-slider{
+        top: 50.25%;
+        left: 23.5%;
+    }
 }
 @media (min-width: 1200px){
   

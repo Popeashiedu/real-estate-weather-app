@@ -3,7 +3,7 @@ let hour = document.querySelector('.hours h2');
 let minute = document.querySelector('.minutes h2');
 let second = document.querySelector('.seconds h2');
 
-console.log(day)
+
 
 // const logo = document.querySelectorAll('#loading path');
 
@@ -11,7 +11,7 @@ console.log(day)
 //     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
 // }
 // PRELOADER CODE 
-var overlay = document.getElementById("overlay");
+let overlay = document.getElementById("overlay");
 
 window.addEventListener('load', function () {
     overlay.style.display = 'none';
@@ -37,7 +37,7 @@ $(function () {
 // TIMER 
 function countdown() {
     let now = new Date();
-    let eventDate = new Date(2020, 08, 25)
+    let eventDate = new Date(2020, 07, 22)
 
     let currentTime = now.getTime();
     let eventTime = eventDate.getTime();
@@ -46,7 +46,7 @@ function countdown() {
 
     let s = Math.floor(remTime / 1000);
     let m = Math.floor(s / 60);
-    let h = Math.floor(m / 6);
+    let h = Math.floor(m / 60);
     let d = Math.floor(h / 24);
 
     h %= 24;
@@ -63,6 +63,7 @@ function countdown() {
     second.innerText = s;
 
     setTimeout(countdown, 1000);
+
 }
 
 window.addEventListener('load', countdown);
