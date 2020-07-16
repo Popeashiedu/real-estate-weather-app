@@ -5,6 +5,7 @@ let second = document.querySelector('.seconds h2');
 
 
 
+
 // const logo = document.querySelectorAll('#loading path');
 
 // for (let i = 0; i < logo.length; i++) {
@@ -67,3 +68,4 @@ function countdown() {
 }
 
 window.addEventListener('load', countdown);
+
