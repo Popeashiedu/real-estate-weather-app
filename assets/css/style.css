@@ -25,6 +25,7 @@
     --fs-h2: 40px;
     --fs-h3: 36px;
     --fs-p: 18px;
+    --fh-clock: 48px;
     --fs-clock: 14px;
     --fs-p-mob: 12px;
     --fh-mob: 20px; 
@@ -165,7 +166,7 @@ footer{
     font-size: var(--fs-p-mob);
     z-index: 4;
 }
-.fab{
+.fab, ion-icon{
     font-size: 28px;
 }
 /* FOOTER ENDS  */

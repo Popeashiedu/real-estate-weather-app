@@ -54,7 +54,7 @@
     }
     /* HEADER  */
     .day h2, .hours h2, .minutes h2, .seconds h2{
-        font-size: var(--fs-h1);
+        font-size: var(--fh-clock);
     }
 
     #tiny-slider{
