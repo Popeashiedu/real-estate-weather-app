@@ -18,6 +18,6 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('HNG/', admin.site.urls),
     path('', include('emailcapture.urls', namespace='emailcapture'))
 ]
