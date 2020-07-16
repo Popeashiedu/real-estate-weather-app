@@ -44,7 +44,7 @@
         height: 6.25rem;
     }
     .clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
-        font-size: var(--fs-p);
+        font-size: var(--fs-clock);
     }
     #features{
         background: url(../images/side-bg-1.png), url(../images/side-bg-2.png);

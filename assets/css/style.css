@@ -25,6 +25,7 @@
     --fs-h2: 40px;
     --fs-h3: 36px;
     --fs-p: 18px;
+    --fs-clock: 14px;
     --fs-p-mob: 12px;
     --fh-mob: 20px; 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),  0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -52,6 +53,12 @@
     width: 3.25rem!important;
     height: 3.25rem;
 }
+/* .clock-1 div, .clock-2 div, .clock-3 div, .clock-4 div{
+    border: 1px solid blue;
+}
+.clock-1 p, .clock-2 p, .clock-3 p, .clock-4 p{
+    border: 1px solid red;
+} */
 
 .day h2, .hours h2, .minutes h2, .seconds h2{
     font-family: var(--ff-primary);
@@ -307,7 +314,7 @@ footer{
     transform-origin: bottom;
     animation-fill-mode: fill-box;
 }
-@keyframes search{
+/* @keyframes search{
     0%{
         transform: translateX(-20px);
     }
@@ -335,4 +342,4 @@ footer{
     100%{
         transform: translateX(-20px);
     }
-}
+} */
