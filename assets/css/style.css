@@ -188,11 +188,13 @@ footer a:hover{
 
 
 
-/* preloader start  */
+/* preloader start issues */
 #overlay{
     background-color: var(--clr-bg-1);
+    position: fixed;
     height: 100%;
     width: 100%;
+    z-index: 500;
 }
 
 #loading{
@@ -201,6 +203,7 @@ footer a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     animation: filling 0.5s ease forwards 2s;
+    z-index: 501;
 }
 
 #loading path:nth-child(2){
@@ -255,7 +258,7 @@ footer a:hover{
     left: 45%;
     transform: translate(-50%, -50%);
     animation: all-dots 2s ease-in 2s;
-    
+    z-index: 501;
 }
 .dot-1{
     animation: loader 2s linear 2.5s infinite ;
