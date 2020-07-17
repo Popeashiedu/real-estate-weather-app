@@ -104,9 +104,11 @@
                         16th, 2020. Also follow our social media accounts for a chance to be a brand ambassador!</p>
                 </div>
                 <div class="col-10 col-md-8 mx-auto">
-                    <form class="form-inline row ">
-
-                        <input type="email" class="form-control col-md-8 col-8" id="inputPassword3" placeholder="Email">
+                    <form class="form-inline row " method="post">
+                        {% csrf_token %}
+                            <!-- <div class="form-group col-8 form"> -->
+<!--                            <input type="email" class="form-control col-8" id="inputPassword2" placeholder="Email">-->
+                            {{ new_email.email }}
 
                         <button type="submit" class="btn btn-primary subscribe-btn col-4">Submit</button>
                     </form>
