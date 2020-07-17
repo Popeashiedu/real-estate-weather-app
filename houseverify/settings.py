@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'hqa!$0y8kfimeu(&e6hj%322)1cc+9tyuf=g54vtncohy4)&)r'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['houseverify.herokuapp.com', '127.0.0.1']
 
